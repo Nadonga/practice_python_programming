@@ -1,13 +1,13 @@
-#Prog09. capitalize() makes the first letter of the string, capital letter. And all other letter in small case. Create a program that do the same functionality without using capitalize() function.
+#Prog09. index() return the first location of the function parameter in the string. Create a program that do the same functionality without using index() function.
 
 text = input("Enter a string: ")
-target = input("Enter character to find: ")
+target = input("Enter character: ")
 
-position = -1
+pos = -1
 
 for i in range(len(text)):
     if text[i] == target:
         pos = i
         break
 
-print(position)
+print(pos)
