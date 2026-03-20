@@ -1,0 +1,9 @@
+#Prog05. endswith() check if the string end part matches the function parameter. Create a program that do the same functionality without using endswith() function.
+
+text = input("Enter a string: ")
+suffix = input("Enter suffix: ")
+
+if len(suffix) <= len(text) and text[-len(suffix):] == suffix:
+    print(True)
+else:
+    print(False)
